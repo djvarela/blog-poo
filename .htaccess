@@ -1,0 +1,8 @@
+RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php 
+
+# Redirección específica para la estructura "/post/{cualquier_texto}"
+RewriteRule ^([a-z\-]+)$ index.php?e=$1 [NC]
+RewriteRule ^([a-z\-]+)/([a-z\-0-9]+)$ index.php?e=$1&a=$2 [NC]

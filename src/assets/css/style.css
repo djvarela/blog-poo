@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Sora', sans-serif;
+  src: url('../fonts/Sora-Light.woff2')
+       url('../fonts/Sora-Bold.woff2') 
+       format('woff2'),
+       url('../fonts/Sora-Light.woff') 
+       url('../fonts/Sora-Bold.woff') 
+      
+       format('woff');
+       font-weight: 400;
+       font-style: normal;
+       font-display: swap;
+
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+  line-height: 1.1rem;
+}
+body{
+  --colorPimario: #696673;
+  --colorSecundario:#82909c;
+  --colorTerciario: #9eafbd;
+  background-color: #eee;
+
+}
+
+a{
+  text-decoration: none;
+  color:inherit
+}
+
+button{
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header{
+background-color: var(--colorPimario);
+width: 100%;
+display: flex;
+padding: .7em;
+align-items: center;
+box-shadow: 1px 1px 1em #665b81;
+margin-bottom: 1em;
+}
+
+.logo-conteiner{
+  max-width: 40%;
+  display: flex;
+  height: auto;
+ align-items: flex-end;
+}
+
+.logo-conteiner img{
+  width:100px;
+  object-fit: scale-down;
+}
+
+.title{
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+
+}
+.title h2{ 
+  margin: 0;
+  font-size: 1.4rem;
+  color: #eee;
+}
+
+header nav ul{
+  display:flex;
+  gap:1em;
+  list-style: none;
+  color: #eee;
+  margin-right: 1em;
+}
+
+nav ul li a{
+  font-weight: bolder;
+}
+
+
+
+footer{
+  text-align: center;
+  padding: .5em;
+  color:#eee;
+  border-top: 1px solid var(--colorSecundario);
+  background-color: var(--colorPimario);
+}
+
+footer p{
+
+  margin: 0;
+}
